@@ -1,0 +1,104 @@
+:root {
+  --display: #3c2a4d;
+  --background: #95adbe;
+  --digits: #3c2a4d;
+  --operators: #574f7d;
+
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center; 
+  align-items: center;
+}
+
+.calculator-container {
+  width: 100%;
+  max-width: 400px;
+
+  border-radius: 30px;
+
+  overflow: hidden;
+
+  box-shadow: 2px 2x 64px rgba(0, 0, 0, 0.1);
+}
+
+.display {
+  height: 20%;
+  background-color: var(--display);
+
+  text-align: right;
+
+  padding: 20px;
+
+  font-size: 1.5rem;
+
+  color: #fff;
+}
+
+.display > span {
+  font-size: 1rem;
+
+  color: rgb(221, 221, 221);
+}
+
+button {
+  border: none;
+  appearance: none;
+  outline: none;
+
+  font-size: 20px;
+
+  cursor: pointer;
+  transition: 0.4s;
+
+  padding: 16px;
+
+  color: #fff;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+.operator-container {
+  display: flex;
+}
+
+.operator-container button {
+  flex: 1 1 0%;
+  background-color: var(--operators);
+  font-weight: 700;
+}
+
+.digits-container {
+  display: flex;
+  flex-wrap: wrap;
+
+}
+
+.digits-container button {
+  flex: 1 1 33%;
+
+  background-color: var(--digits);
+}
+
+footer {
+  position: absolute;
+  bottom: 20px;
+}
+
+footer a{
+  text-decoration: none;
+
+  color:#111;
+}
